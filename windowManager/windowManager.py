@@ -1,9 +1,8 @@
 """
 Manages window detection, focus, and dimensions for Balatro.
-Balatro is autimatically focused when launched
 """
 
-"""
+
 from pywinauto import Desktop
 import psutil
 import time
@@ -62,4 +61,4 @@ class WindowManager:
             raise Exception(f"Unable to focus target window: {e}")
 
         print(f"[WINDOW] Focused '{target.window_text()}' (pid={target.process_id()})")
-"""
+
